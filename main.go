@@ -9,7 +9,7 @@ import (
 func hello(w http.ResponseWriter, req *http.Request) {
 	hostname, _ := os.Hostname()
 
-	fmt.Fprintf(w, "hello from %s\n", hostname)
+	fmt.Fprintf(w, "hello from: %s\n", hostname)
 }
 
 func main() {
